@@ -168,7 +168,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             chalk.green.bold('✅ Plugins Installed!')
         );
         await new Promise(r => setTimeout(r, 1100));
-        if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
+        if (conn.user.jid == one) {
             await conn.sendMessage(conn.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => { 
                 forID = formation[0].id; 
